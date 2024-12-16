@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Member Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>PICE BulSU-SC</h1>
+            <h2>Board Member Dashboard</h2>
+        </header>
+        <section class="attendance-section">
+            <h3>Take Attendance</h3>
+            <ul class="event-list">
+                <!-- Event list will be populated here -->
+            </ul>
+        </section>
+        <section class="qr-scanner-section" style="display: none;">
+            <h3>Live QR Scanner</h3>
+            <div id="qr-reader"></div>
+            <div id="qr-reader-results"></div>
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="timeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span id="toggleLabel">Time In</span>
+            </div>
+        </section>
+    </div>
+    <script src="board_dashboard.js"></script>
+</body>
+</html>
